@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Product information pipeline</title>
+<title>The Loop</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -24,7 +24,7 @@
   </style>
 </helmet>
 
-<div data-screen-label="Product information pipeline" style="position: relative; width: 1920px; height: 2940px; background-color: {{ bg }}; background-image: var(--grain); background-size: 128px; font-family: var(--font-sans); color: var(--navy); overflow: hidden;">
+<div data-screen-label="The Loop" style="position: relative; width: 1920px; height: 2940px; background-color: {{ bg }}; background-image: var(--grain); background-size: 128px; font-family: var(--font-sans); color: var(--navy); overflow: hidden;">
 
   <div style="position: absolute; left: -200px; top: 700px; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(242,112,89,0.10) 0%, rgba(242,112,89,0) 65%); pointer-events: none;"></div>
   <div style="position: absolute; left: 1300px; top: 2100px; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(155,143,212,0.12) 0%, rgba(155,143,212,0) 65%); pointer-events: none;"></div>
@@ -34,7 +34,7 @@
       <x-import component-from-global-scope="HoursDesignSystem_a6c7f7.Logo" variant="mark" size="{{ 28 }}" hint-size="28px,28px"></x-import>
       <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-500);">Loop strategy</span>
     </div>
-    <h1 style="margin: 0; font-size: 56px; font-weight: 300; letter-spacing: -0.02em; line-height: 1.05; color: var(--navy);">Product information pipeline</h1>
+    <h1 style="margin: 0; font-size: 56px; font-weight: 300; letter-spacing: -0.02em; line-height: 1.05; color: var(--navy);">The Loop</h1>
   </div>
 
   <svg width="1920" height="2940" viewBox="0 0 1920 2940" fill="none" style="position: absolute; left: 0; top: 0; pointer-events: none;">
@@ -83,15 +83,6 @@
   <div style="position: absolute; left: 798px; top: 656px; width: 276px; height: 44px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-md); background: var(--white); border: 1px solid var(--ink-200); box-shadow: var(--shadow-xs); font-size: 15px; font-weight: 500;">Infrastructure info setup</div>
 
   <!-- Left branch: metrics -->
-  <sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}">
-    <div style="position: absolute; left: 212px; top: 1024px; width: 206px; height: 70px; box-sizing: border-box; padding: 10px 14px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-sm); background: rgba(242,158,76,0.18); font-size: 13px; line-height: 1.45; color: var(--ink-900); text-wrap: pretty;">
-      <span>What you <strong>measure</strong> is what you <strong>drive</strong>.</span>
-    </div>
-    <div style="position: absolute; left: 212px; top: 1108px; width: 206px; height: 70px; box-sizing: border-box; padding: 10px 14px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-sm); background: rgba(242,158,76,0.18); font-size: 13px; line-height: 1.45; color: var(--ink-900);">
-      <span>In terms of tooling see <a href="#">here</a>.</span>
-    </div>
-  </sc-if>
-
   <div style="position: absolute; left: 436px; top: 1018px; width: 318px;">
     <x-import component-from-global-scope="HoursDesignSystem_a6c7f7.Card" tone="cream" padding="{{ 22 }}" hint-size="318px,160px">
       <div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.5;">
@@ -104,12 +95,6 @@
       </div>
     </x-import>
   </div>
-
-  <sc-if value="{{ showTools }}" hint-placeholder-val="{{ true }}">
-    <div title="Tool logo" style="position: absolute; left: 436px; top: 1236px; width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; border: 1.5px dashed var(--lavender); background: rgba(155,143,212,0.10);"></div>
-    <div title="Tool logo" style="position: absolute; left: 436px; top: 1354px; width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; border: 1.5px dashed var(--lavender); background: rgba(155,143,212,0.10);"></div>
-    <div title="Tool logo" style="position: absolute; left: 908px; top: 1474px; width: 40px; height: 40px; box-sizing: border-box; border-radius: 50%; border: 1.5px dashed var(--lavender); background: rgba(155,143,212,0.10);"></div>
-  </sc-if>
 
   <div style="position: absolute; left: 490px; top: 1216px; width: 184px; height: 84px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-md); background: var(--peach-soft); font-size: 17px; font-weight: 500; line-height: 1.35;">Product metrics</div>
   <div style="position: absolute; left: 490px; top: 1334px; width: 184px; height: 84px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-md); background: var(--peach-soft); font-size: 17px; font-weight: 500; line-height: 1.35;">User behaviour metrics</div>
@@ -144,14 +129,14 @@
 
   <div style="position: absolute; left: 1146px; top: 1312px; width: 184px; height: 98px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-md); background: var(--peach-soft); font-size: 17px; font-weight: 600; line-height: 1.35;">Customer interviews (cadence)</div>
   <div style="position: absolute; left: 1344px; top: 1322px; width: 172px; display: flex; flex-direction: column; gap: 3px;">
-    <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; font-weight: 600; color: var(--ink-900);">Moderated</div>
+    <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; color: var(--ink-900);">Moderated</div>
     <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; color: var(--ink-900);">Unmoderated</div>
     <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; color: var(--ink-900);">Prototype validation</div>
   </div>
   <div style="position: absolute; left: 1524px; top: 1318px; width: 30px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 56px; font-weight: 300; line-height: 1; color: var(--ink-500);">}</div>
   <div style="position: absolute; left: 1562px; top: 1335px; width: 172px; display: flex; flex-direction: column; gap: 3px;">
-    <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; font-weight: 600; color: var(--ink-900);">Existing customers</div>
-    <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; color: var(--ink-900);"><span>Potential (<strong>leads</strong>)</span></div>
+    <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; color: var(--ink-900);">Existing customers</div>
+    <div style="height: 24px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--cream); border: 1px solid var(--ink-100); font-size: 13px; color: var(--ink-900);"><span>Potential (leads)</span></div>
   </div>
 
   <div style="position: absolute; left: 1146px; top: 1440px; width: 184px; height: 98px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: var(--radius-md); background: var(--peach-soft); font-size: 17px; font-weight: 500; line-height: 1.35;">Customer support</div>

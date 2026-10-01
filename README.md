@@ -1,4 +1,4 @@
-# Product information pipeline
+# The Loop
 
 Loop strategy diagram: how business goals, metrics and user research flow through the product manager into the roadmap.
 
